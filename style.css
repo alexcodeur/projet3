@@ -1,0 +1,377 @@
+/***************** Style global *****************/
+
+body p {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+hr {
+    border: 0.7px solid;
+    border-color: #5f9ea0;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+/***************** Header *****************/
+
+#containerHeader {
+    width: 100%;
+    display: flex;
+}
+
+#headerG {
+    text-align: right;
+    width: 30%;
+}
+
+#logoSites {
+    width: 225px;
+}
+
+#headerD {
+    width: 70%;
+    position: relative;
+}
+
+header h1 {
+    color: #5f9ea0;
+    position: absolute;
+    top: 42%;
+    transform: translateY(-50%);
+    font-size: 2.6em;
+}
+
+/***************** Diaporama *****************/
+
+#img {
+    width: 650px;
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+}
+
+.images {
+    width: 650px;
+    height: 450px;
+    position: absolute;
+}
+
+#diapoContainer {
+    width: 650px;
+    margin: 0 auto;
+}
+
+#img1 {
+    z-index: 10;
+}
+
+#img2,
+#img3 {
+    display: none;
+}
+
+.bouton {
+    display: none;
+}
+
+.fa {
+    cursor: pointer;
+    color: #5f9ea0;
+}
+
+#containerButton {
+    text-align: center;
+    display: flex;
+    width: 300px;
+    height: 45px;
+    margin: 30px auto;
+}
+
+#int1 {
+    width: 50%;
+    height: 100%;
+}
+
+#int2 {
+    width: 50%;
+    height: 100%;
+}
+
+#blocP{
+    position: relative;
+}
+
+#pImg1{
+    position: absolute;
+    top: -150px;
+}
+
+#pImg2 {
+    display: none;
+    position: absolute;
+    top: -150px;
+}
+
+#pImg3 {
+    display: none;
+    position: absolute;
+    top: -100px;
+}
+
+#pImg4 {
+    display: none;
+    position: absolute;
+    top: -150px;
+}
+
+/***************** Map *****************/
+
+#map {
+    height: 100%;
+}
+
+html,
+body,
+#container {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#containerMap {
+    display: flex;
+    border: 10px solid;
+    border-color: rgba(95, 158, 160, 0.5);
+}
+
+#container {
+    width: 100%;
+    height: 600px;
+}
+
+/***************** Popin Etat Station *****************/
+
+#infosStation {
+    margin: 0 auto;
+    margin-top: 80px;
+}
+
+#corpPopin {
+    font-family: cursive;
+    background: rgba(223, 223, 223, 0.5);
+    border-radius: 10px;
+    box-shadow: 0px 0px 100px #5f9ea0;
+    text-align: center;
+}
+
+#detailsStation {
+    color: #5f9ea0;
+}
+
+.contenuPopin {
+    margin-top: 50px;
+}
+
+#boutonsPopin {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    width: 320px;
+    margin: 0 auto;
+}
+
+#reserver {
+    margin-right: 15px;
+}
+
+.boutonPopin {
+    cursor: pointer;
+    box-shadow: 0px 0px 10px;
+    width: 150px;
+    height: 30px;
+    font-size: 1em;
+    background-color: grey;
+    border-color: grey;
+    border-radius: 10px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.fa-times {
+    margin-right: 10px;
+    color: red;
+}
+
+.fa-bicycle {
+    color: limegreen;
+}
+
+#newChoice {
+    text-align: center;
+
+}
+
+.fa-exclamation-triangle {
+    color: red;
+}
+
+/***************** Canvas *****************/
+
+#canvasPlace p {
+    text-align: center;
+    font-size: 1.7em;
+    color: #5f9ea0;
+}
+
+#boutonCanvas {
+    text-align: center;
+    margin-top: 25px;
+}
+
+#valider,
+#supprimer {
+    width: 200px;
+    height: 40px;
+    background: #5f9ea0;
+    font-size: 1.5em;
+    border-color: #5f9ea0;
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/***************** Footer + Timer *****************/
+
+footer {
+
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    text-align: center;
+}
+
+footer p {
+    font-size: 1.5em
+}
+
+#nomStation {
+    color: white;
+    background: none;
+}
+
+#reservationAnnuler {
+    text-align: center;
+    margin-bottom: 10px;
+    width: 130px;
+    height: 37px;
+    font-size: 1.2em;
+    font-family: cursive;
+    border-radius: 40px;
+    background-color: firebrick;
+    border-color: red;
+    color: white;
+
+}
+
+.fa-times {
+    margin-left: 9.7px
+}
+
+/***************** @media queries *****************/
+
+@media screen and (max-width: 900px) {
+    #containerHeader {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    #headerG {
+        text-align: center;
+        width: 100%;
+    }
+
+    #headerD {
+        position: inherit;
+        width: 100%;
+        text-align: center;
+    }
+
+    header h1 {
+        color: #5f9ea0;
+        position: inherit;
+    }
+    
+}
+
+@media screen and (max-width: 700px) {
+   
+    #containerMap {
+        flex-direction: column;
+        margin-top: 200px;
+        display: inline;
+        border: none;
+    }
+
+    #container {
+        margin: 0 auto;
+    }
+
+    #diapoContainer,
+    #diaporama,
+    #img {
+        width: inherit;
+    }
+
+    #img {
+        width: 100%;
+    }
+
+    #img img
+    {
+        width: 100%;
+    }
+    
+    #diaporama {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-bottom: 50px;
+    }
+
+    #diapoContainer {
+        width: 90%;
+    }
+
+    #blocP
+    {
+        font-size: 0.8em;
+    }
+    
+    #pImg1
+    {
+        top: -170px;
+    }
+    
+    #pImg4
+    {
+        top: -170px;
+    }
+    
+}
+
+@media screen and (max-width: 390px) {
+    #boutonsPopin {
+        display: flex;
+        flex-direction: column;
+        width: 150px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    #headerG {
+        margin-bottom: 80px;
+    }
+
+    #headerD {
+        margin-bottom: -100px;
+    }
+    
+}

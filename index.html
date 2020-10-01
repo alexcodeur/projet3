@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+
+    <title>Location de vélib</title>
+
+    <link rel="icon" href="img/iconVelibSite.png" />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="stylesheet" href="fonts/font-awesome.min.css" />
+
+    <link rel="stylesheet" media="all and (max-device-width: 720px)" href="smartphone.css" />
+
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+
+        <div id="containerHeader">
+
+            <div id="headerG">
+
+                <img src="img/logo.png" alt="logoSites" id="logoSites" />
+
+            </div>
+
+            <div id="headerD">
+
+                <h1>Vélib'Mania, la passion du vélo !</h1>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <hr />
+
+    <p id="pBody">Bienvenus chers visiteurs! Vous trouverez dans le diaporama ci-dessous toutes les informations à savoir lors de votre navigation, bonne visite !</p>
+
+    <!-- Diaporama -->
+    <div id="diaporama">
+
+        <button id="boutonGauche" name="boutonGauche" class='bouton'></button>
+
+        <button id="boutonDroite" name="boutondroite" class='bouton'></button>
+
+        <div id="diapoContainer" style="border: 10px solid rgba(95, 158, 160, 0.5); box-shadow: 0 10px 20px rgba(95, 158, 160, 1);">
+
+            <div id="img">
+
+                <img src="img/img1.png" alt="img" id="img1" class="images">
+
+                <img src="img/img2.png" alt="img2" id="img2" class="images">
+
+                <img src="img/img3.png" alt="img3" id="img3" class="images">
+
+                <img src="img/img4.png" alt="img4" id="img4" class="images">
+
+            </div>
+
+            <div id="blocP">
+
+                <p id="pImg1">Les marqueurs numérotés indiquent le nombre de stations. Cliquez sur un marqueur les verts sont les stations ouvertes et les rouges celles fermées.</p>
+
+                <p id="pImg2">Voici les détails de la station. Vous pouvez cliquer sur réserver pour accéder à la signature électronique, fermer ce panneau ou choisir une nouvelle station.</p>
+
+                <p id="pImg3">Maintenant, vous devez signer puis cliquer sur valider pour finaliser la réservation.</p>
+
+                <p id="pImg4">Une fois la signature validée, votre réservation est condirmée, vous aurez alors 20 minutes pour récupérer votre Vélib ! Merci d'avoir utilisé Vélib'Mania!</p>
+
+            </div>
+
+
+        </div>
+
+        <div id="containerButton">
+
+            <div id="int1">
+
+                <label for="boutonGauche"><i class="fa fa-arrow-circle-left fa-3x" aria-hidden="true"></i></label>
+
+            </div>
+
+            <div id="int2">
+
+                <label for="boutonDroite"><i class="fa fa-arrow-circle-right fa-3x" aria-hidden="true"></i></label>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <!-- Map -->
+    <div id="containerMap">
+
+        <div id="container">
+
+            <div id="map"></div>
+
+        </div>
+
+        <div id='infosStation'>
+
+
+            <div id="corpPopin">
+
+                <h1 id="detailsStation">Détails de la station</h1>
+
+                <h3 id="adresse" class="contenuPopin">Adresse : </h3>
+
+                <h3 id="ouverte" class="contenuPopin">Ouverte : </h3>
+
+                <h3 id="places" class="contenuPopin">Places disponibles : </h3>
+
+                <h3 id="velos" class="contenuPopin">Vélos disponibles : </h3>
+
+                <p id="newChoice"></p>
+
+                <div id="boutonsPopin">
+
+                    <a href="#canvasPlace" style="text-decoration: none;"><button id="reserver" class="boutonPopin"><i class="fa fa-bicycle" aria-hidden="true"></i> Réserver</button></a>
+
+                    <button id="fermer" class="boutonPopin"><i class="fa fa-times" aria-hidden="true"></i> Fermer</button>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <!-- Canvas -->
+    <section id="canvasPlace">
+
+        <p id="pCanvas">Veuillez signer puis valider pour la réservation de votre vélo :</p>
+
+        <div id="canvasDiv">
+            <!-- balise canvas créée puis ajoutée depuis le DOM en jQuery -->
+        </div>
+
+        <div id="boutonCanvas">
+
+            <button id="valider">Valider</button>
+
+            <button id="supprimer">Supprimer</button>
+
+        </div>
+
+    </section>
+
+    <!-- Timer + reservation dans le footer -->
+    <footer>
+
+        <p class="sinon0"></p>
+        <!-- phrase dans le footer -->
+
+        <p class="sinon1"></p>
+        <!-- phrase dans le footer -->
+
+        <p class="sinon2"></p>
+        <!-- phrase dans le footer -->
+
+        <div id="reservationDiv">
+
+            <div id="timer">
+
+                <div id="timerBike">
+                    <!-- Timer dynamique ajouté depuis le DOM -->
+                </div>
+
+            </div>
+
+        </div>
+
+        <button id="reservationAnnuler">Annuler<i class="fa fa-times" aria-hidden="true"></i></button>
+
+    </footer>
+
+    <!-- jQuery -->
+    <script src="jquery-3.2.1.min.js"></script>
+
+    <!-- Map -->
+    <script src="mapManager.js"></script>
+
+    <!-- Timer -->
+    <script src="timer.js"></script>
+
+    <!-- Canvas -->
+    <script src="canvas.js"></script>
+
+    <!-- Diaporama -->
+    <script src="diapo.js"></script>
+
+    <!-- Execute tout les objets -->
+    <script src="main.js"></script>
+
+    <!-- API Google maps -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBnyZy5cIDg4WcxD6zuYct8CX_QoOZJ6_s&callback=initMap" async defer></script>
+
+    <!-- Marker clusterer -->
+    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+
+</body>
+
+</html>

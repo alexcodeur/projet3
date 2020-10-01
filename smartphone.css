@@ -1,0 +1,160 @@
+/***************** Style global smartphone *****************/
+#pBody
+{
+    font-size: 2.5em;
+}
+
+hr
+{
+    color: #5f9ea0;
+}
+
+/***************** Header smartphone *****************/
+header
+{
+    height: 350px;
+}
+
+#containerHeader
+{
+    flex-direction: column;
+}
+
+#headerG
+{
+    width: 30%;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+#logoSites {
+    width: 300px;
+}
+
+#headerD h1
+{
+    width: 100%;
+    margin-top: 50px;
+    margin-left: 25%;
+}
+
+/***************** Diaporama smartphone *****************/
+#diapoContainer
+{
+    width: 90%;
+    height: 700px;
+    overflow: hidden;
+}
+
+#img
+{
+    width: 100%;
+    height: 715px;
+    position: inherit;
+    overflow: hidden;
+    position: relative;
+}
+
+#img1
+{
+    position: absolute;
+}
+
+#img2
+{
+    display: none;
+    position: absolute;
+}
+
+#img3
+{
+    display: none;
+    position: absolute;
+}
+
+#img4
+{
+    display: none;
+    position: absolute;
+}
+
+.images
+{
+    width: 100%;
+    height: 600px;
+    position: inherit;
+}
+
+.fa-arrow-circle-right, .fa-arrow-circle-left
+{
+    font-size: 5em;
+}
+
+#containerButton
+{
+    margin-bottom: 70px;
+}
+
+/***************** Map smartphone *****************/
+#containerMap 
+{
+    flex-direction: column;
+}
+
+#container
+{
+    margin: 0 auto;
+}
+
+#infosStation
+{
+    width: 100%;
+    
+}
+
+#corpPopin
+{
+    font-size: 3em;
+}
+
+.boutonPopin
+{
+    width: 400px;
+    height: 75px;
+    font-size: 1em;
+}
+
+/***************** Canvas smartphone *****************/
+#canvasPlace #pCanvas
+{
+    font-size: 3em;
+    margin-bottom: 50px;
+}
+
+#boutonCanvas
+{
+    margin-top: 50px;
+}
+
+#valider
+{
+    width: 400px;
+    height: 75px;
+    font-size: 3em;
+}
+
+#supprimer
+{
+    width: 400px;
+    height: 75px;
+    font-size: 3em;
+}
+
+#reservationAnnuler
+{
+    margin-top: 25px;
+    width: 200px;
+    height: 75px;
+    font-size: 2em;
+}
